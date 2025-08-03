@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Baskervville+SC&family=Cabin:ital,wght@0,400..700;1,400..700&family=Caveat:wght@400..700&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crafty+Girls&family=Esteban&family=Great+Vibes&family=Merienda:wght@300..900&family=Odibee+Sans&family=Permanent+Marker&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="donorLoginStyle.css" rel="stylesheet">
+</head>
+<body>
+        <header>    
+            <div class="box">
+                <img class="logoim" src="iconnn.jpg" alt="logo">
+                <h2 class="logo">Donate Blood</h2>
+            </div>
+            <nav class="navigation">
+                <a href="HomePage1st.html">Home</a>
+                <a href="RecipientForm.html">Find Blood</a>
+                <a href="Donor_registration.html">Register Now</a>
+                <a href="about.html">About Us</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="admin1.html"><button class="butt">Back</button></a>
+            </nav>
+        </header>
+        <div class="container">
+      
+            <h1 style="text-align: center;">Welcome Back!</h1><br>
+            <form action="submit_Donorlogin.php" method="post">
+
+                <label for="email">E-mail/Phone Number</label>
+                <input type="text" id="email" name="email" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <div class="forgot-password">
+                    <a href="#">Forgot password?</a>
+                </div>
+                <input type="submit" class="login-button" value="Login">
+
+            </form>
+            <div class="register">
+                <label style="font-size: 18px;">OR</label><br><br>
+                <label>Don’t have an account? </label><a href="#"> Register now</a>
+            </div>
+        </div><br><br><br><br><br><br><br><br>
+
+</body>
+</html>

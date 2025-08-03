@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood bank</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Baskervville+SC&family=Cabin:ital,wght@0,400..700;1,400..700&family=Caveat:wght@400..700&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crafty+Girls&family=Esteban&family=Great+Vibes&family=Merienda:wght@300..900&family=Odibee+Sans&family=Permanent+Marker&family=Playwrite+AR:wght@100..400&family=Playwrite+DK+Loopet:wght@100..400&family=Rokkitt:ital,wght@0,100..900;1,100..900&family=Zain:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+    }
+    img:hover{
+
+transform: scale(1.2);
+transition: all 2s;
+}
+    header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding: 20px 70px;
+                background-color: rgb(255, 255, 255);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                z-index: 99;
+                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+
+            }
+
+            .logo {
+                user-select: none;
+                font-size: 2em; 
+                color: rgb(148, 12, 12);
+                text-align: left;
+                margin-top: 22px;
+                margin-left: 10px;
+                text-shadow: 2px 2px 5px #928f8f;
+                font-family: "Arvo",serif;
+                font-weight: 700;
+            }
+
+            .logoim {
+                user-select: none;
+                width: 80px;
+                height: 80px;
+                color: white;
+            }
+
+            .box {
+                display: flex;
+            }
+
+            .box {
+                display: flex;
+            }
+
+            .navigation a {
+                position: relative;
+                font-size: 1.4em;
+                color: #000000;
+                text-decoration: none;
+                font-weight: 500;
+                margin-left: 40px;
+                font-family: "Arvo",serif;
+                font-weight: 400;
+            }
+
+            .navigation .butt {
+                width: 130px;
+                height: 50px;
+                background: transparent;
+                border: 2px solid black;
+                outline: none;
+                border-radius: 6px;
+                cursor: pointer;
+                font-size: 1.5em;
+                color: rgb(0, 0, 0);
+                font-weight: 500;
+                margin-left: 40px;
+                transition: .5s;
+                font-family: "Arvo",serif;
+                font-weight: 700;
+            }
+
+            .navigation .butt:hover {
+                background-color: rgb(46, 162, 65);
+                color: #162938;
+            }
+            footer {
+                background: #333;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                position: relative;
+                width: 100%;
+                bottom: 0;
+                margin-top: 300px;
+            }
+
+            .container_grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 20px;
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            .f_about, .f_links, .f_question {
+                list-style: none;
+                padding: 20px
+
+            }
+
+            .f_links .f_about, ul {
+                list-style: none;
+            }
+
+
+            .f_links ul li {
+                padding-top: 5px;
+                margin-bottom: 10px;
+            }
+
+            .f_links ul li a {
+                
+                color: white;
+                text-decoration: none;
+            }
+            .contain{
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100hv;
+
+            }
+
+            .icon_link {
+                display: flex;
+                justify-content: space-around;
+                width: 10%; /* Adjust as needed for spacing */
+            }
+
+            .icon_link a {
+                color: white;
+                font-size: 2em; 
+                transition: color 0.3s;
+            }
+
+            .icon_link a:hover {
+                color: #3cb23a; 
+            } 
+            .credits{
+
+                margin-top: 10px;
+                font-style: italic;
+
+            }
+   table {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 100px;
+  margin-left: 22.5%;
+  margin-bottom: 40px;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ccc;
+  background-color: #9f0000;
+  color: #fff;
+}
+
+th {
+  background-color: #7a0000;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+td{
+  font-family: "Baskervville SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: large;
+}
+.dashboard {
+  max-width: 500%;
+  margin-top: 130px;
+  padding: 20px;
+  background: linear-gradient(to right, #9f0000, #d32f2f);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(248, 247, 247, 0.927);
+}
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.dashboard h1 {
+  font-size: 24px;
+  color: #fff;
+  margin-top: 20px;
+  margin-left: 11%;
+  font-family: "Baskervville SC", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.alert-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.alert {
+  background-color: #e3f2fd;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.alert i {
+  color: #2196f3;
+  margin-right: 10px;
+}
+
+.alert span {
+  font-weight: bold;
+  text-transform: lowercase;
+  
+}
+
+.alert-button {
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.alert-button:hover {
+  background-color: #1976d2;
+}
+   </style>
+<body>
+    <header>    
+        <div class="box">
+            <img class="logoim" src="iconnn.jpg" alt="logo">
+            <h2 class="logo">Donate Blood </h2>
+        </div>
+        <nav class="navigation">
+          <a href="HomePage1st.html">Home</a>
+          <a href="RecipientForm.html">Find Blood</a>
+          <a href="health.html">Register Now</a>
+          <a href="about.html">About Us</a>
+          <a href="feedback.html">Feedback</a>
+            <a href="admin2.html"><button class="butt">Back</button></a>
+        </nav>
+    </header>
+
+    <div class="dashboard">
+        <div class="dashboard-header">
+          <h1>Blood Bank</h1>
+        </div>
+    </div>
+    
+    <table>
+        <tr>
+            <th>Blood Type</th>
+            <th>Quantity</th>
+        </tr>
+        <tr>
+            <td>A+</td>
+            <td>10 Bags</td>
+        </tr>
+        <tr>
+            <td>A-</td>
+            <td>18 Bags</td>
+        </tr>
+        <tr>
+            <td>B+</td>
+            <td>12 Bags</td>
+        </tr>
+        <tr>
+            <td>B-</td>
+            <td>40 Bags</td>
+        </tr>
+        <tr>
+            <td>O+</td>
+            <td>4 Bags</td>
+        </tr>
+        <tr>
+            <td>O-</td>
+            <td>7 Bags</td>
+        </tr>
+        <tr>
+            <td>AB+</td>
+            <td>12 Bags</td>
+        </tr>
+        <tr>
+            <td>AB-</td>
+            <td>15 Bags</td>
+        </tr>
+    </table>
+
+    <div class="alert-container">
+        <div class="alert">
+            <span>Low Blood Stock Alert</span>
+            <a href="displayAvailableBlood.php" class="alert-button">View Details</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container_grid">
+            <div class="f_about">
+                <h3>About</h3>
+                <li></li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ad asperiores assumenda tempore natus deleniti accusantiu</p>
+            </div>
+
+            <div class="f_links">
+                <h3>Quick Links</h3>
+                <ul>
+                  <li><a href="HomePage1st.html">Home</a></li>
+                  <li><a href="RecipientForm.html">Find Blood</a></li>
+                  <li><a href="health.html">Register Now</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+
+            <div class="f_question">
+                <h3>Have anything to ask?</h3>
+                <ul>
+                    <address>
+                        <li></li>
+                        <div>
+                            <p><i class="fa-solid fa-house"></i><span>Gift University, GRW</span></p>
+                        </div>
+                        <div>
+                            <p><span>email_id</span></p>
+                        </div>
+                        <div>
+                            <p><i class="fa-solid fa-phone"></i><span>  contact_us</span></p>
+                        </div>
+
+                    </address>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contain">
+            <div class="icon_link">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="credits">
+            <p>@Copyright all rights reserved | edit by @writter777</p>
+
+        </div>
+    </footer>
+</body>
+</html>

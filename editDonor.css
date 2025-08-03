@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listed Blood Group</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Baskervville+SC&family=Cabin:ital,wght@0,400..700;1,400..700&family=Caveat:wght@400..700&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crafty+Girls&family=Esteban&family=Great+Vibes&family=Merienda:wght@300..900&family=Odibee+Sans&family=Permanent+Marker&family=Playwrite+AR:wght@100..400&family=Playwrite+DK+Loopet:wght@100..400&family=Rokkitt:ital,wght@0,100..900;1,100..900&family=Zain:wght@200;300;400;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="listedStyle.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="box">
+            <img class="logoim" src="iconnn.jpg" alt="logo">
+            <h2 class="logo">Donate Blood </h2>
+        </div>
+        <nav class="navigation">
+            <a href="HomePage1st.html">Home</a>
+            <a href="RecipientForm.html">Find Blood</a>
+            <a href="health.html">Register Now</a>
+            <a href="about.html">About Us</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="admin2.html"><button class="butt">Back</button></a>
+        </nav>
+    </header>
+    <div class="dashboard">
+        <div class="dashboard-header">
+            <h1>Listed Blood Groups</h1>
+        </div>
+    </div>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Blood Groups</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>O+</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>A+</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>B-</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>O-</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;              }
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: url(wp9078348.jpg) no-repeat;
+        background-size: cover;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 20hv;
+        padding: 20px 70px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 99;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    .logo {
+        user-select: none;
+        font-size: 35px; 
+        color: rgb(148, 12, 12);
+        text-align: left;
+        margin-top: 22px;
+        margin-left: 10px;
+        text-shadow: 0px 0px 4px #928f8f;
+        font-family: "Chakra Petch", sans-serif;
+        font-weight: 700;
+    }
+    .logoim {
+        user-select: none;
+        width: 80px;
+        height: 80px;
+        color: white;
+    }
+    .box {
+        display: flex;
+    }
+    .navigation a {
+        position: relative;
+        font-size: 1.2em;
+        color: #000000;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 40px;
+        font-family: "Arvo", serif;
+        font-weight: 400;
+    }
+    .navigation .butt {
+        width: 100px;
+        height: 40px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 1em;
+        color: rgb(0, 0, 0);
+        margin-left: 40px;
+        font-family: "Arvo", serif;
+        font-weight: 700;
+    }
+    .navigation .butt:hover {
+        background-color: rgb(0, 0, 0);
+        color: #fff;
+    }
+
+.banner {
+    background-color: #8B0000;
+    height: 100px;
+    background-image: url(made.jpg);
+    background-size: cover;
+
+}
+
+.feedback-container {
+    background: linear-gradient(135deg, #610d0d, #635f3e); 
+    margin: 20px auto;
+    padding: 20px;
+    margin-top: 80px;
+    border-radius: 10px;
+    max-width: 500px;
+    height: 350px;
+    color: white;
+    
+}
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+}
+
+.stars {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.submit-btn {
+    background-color: #6a6d6a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    float: right;
+}
+.textarea-new{
+    color: white;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 2px solid #928f8f;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    nav {
+        margin-top: 10px;
+    }
+}

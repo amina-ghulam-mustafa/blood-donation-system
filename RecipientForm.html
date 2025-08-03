@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="RecipientForm.css">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Baskervville+SC&family=Cabin:ital,wght@0,400..700;1,400..700&family=Caveat:wght@400..700&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crafty+Girls&family=Esteban&family=Great+Vibes&family=Merienda:wght@300..900&family=Odibee+Sans&family=Permanent+Marker&family=Playwrite+AR:wght@100..400&family=Playwrite+DK+Loopet:wght@100..400&family=Rokkitt:ital,wght@0,100..900;1,100..900&family=Zain:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
+    
+    </head>
+    <body>
+
+        <header>    
+            <div class="box">
+                <img class="logoim" src="iconnn.jpg" alt="logo">
+                <h2 class="logo">Donate Blood </h2>
+            </div>
+            <nav class="navigation">
+            <a href="HomePage1st.html">Home</a>
+            <a href="RecipientForm.html">Find Blood</a>
+            <a href="health.html">Register Now</a>
+            <a href="about.html">About Us</a>
+            <a href="feedback.html">Feedback</a> 
+            <a href="HomePage1st.html"><button class="butt">Back</button></a>
+            </nav>
+        </header>
+
+
+        <div class="container">
+            <div class="left-column">
+         </div> 
+
+            <div class="right-column">
+
+                <h3>Recipient Details</h3>
+                
+                <form class="forming" action="submit_recipient.php" method="post">
+
+                    <div class="center">
+                 <label for="full_name">Full Name:</label>
+
+                <input type="text" id="full_name" name="first_name" placeholder="First Name">
+                <input type="text" id="full_name" name="last_name" placeholder="Last Name">
+        
+            
+            
+            </div>
+
+                    <div class="center">
+                  <label for="contact">Contact:</label>
+              
+                <input type="tel" id="contact" name="contact">
+                <label for="contact">Contact:</label>
+                <input type="tel" id="contact2" name="contact2">
+                <label for="contact">Contact:</label>
+                <input type="tel" id="contact3" name="contact3"><br>
+            
+            
+            </div>
+
+
+                    <div class="center">
+                         
+                        <label for="address">Address:</label>
+                        <input type="text" name="address" id="address"  >
+
+                        </div>
+               
+                        <div class="nothing">
+                            <label for="gender">Select Gender:</label><br>
+                            <input type="radio" name="gender"  value="male"> Male
+                            <input type="radio" name="gender"  value="female"> Female
+                        </div>
+
+                        <label for="blood_group">Select Blood Group:</label>
+                        <select name="blood_group" id="blood">
+                            <option value="select">Select any blood group</option>
+                            <option value="A+">A+</option>
+                            <option value="A+">A-</option>
+                            <option value="A+">B+</option>
+                            <option value="A+">B_</option>
+                            <option value="A+">C+</option>
+                            <option value="A+">C-</option>
+                            <option value="A+">AB+</option>
+                            <option value="A+">AB-</option>
+                        </select>
+
+                    <!-- <div class="nothing">
+                        
+                        <br>
+                        <input type="radio" name="blood_group" value="A+"> A+
+                        <input type="radio" name="blood_group" value="A-"> A-
+                        <br>
+                        <input type="radio" name="blood_group" value="B+"> B+
+                        <input type="radio" name="blood_group" value="B-"> B-
+                        <br>
+                        <input type="radio" name="blood_group" value="O+"> O+
+                        <input type="radio" name="blood_group" value="O-"> O-
+                        <br>
+                        <input type="radio" name="blood_group" value="AB+"> AB+
+                        <input type="radio" name="blood_group" value="AB-"> AB-
+
+                    </div> -->
+
+
+
+                    <input type="submit" name="submit" value="register" class="submit">
+
+
+                </form>
+
+
+            </div>
+        
+        </div>
+
+
+        
+        
+    </body>
+</html>

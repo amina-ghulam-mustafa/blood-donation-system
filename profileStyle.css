@@ -1,0 +1,197 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(cover.jpg);
+    background-size: cover;
+
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20hv;
+    padding: 20px 70px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.logo {
+    user-select: none;
+    font-size: 35px; 
+    color: rgb(148, 12, 12);
+    text-align: left;
+    margin-top: 22px;
+    margin-left: 10px;
+    text-shadow: 0px 0px 4px #928f8f;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+}
+.logoim {
+    user-select: none;
+    width: 80px;
+    height: 80px;
+    color: white;
+}
+.box {
+    display: flex;
+}
+.navigation a {
+    position: relative;
+    font-size: 1.2em;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    font-family: "Arvo", serif;
+    font-weight: 400;
+}
+.navigation .butt {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    margin-left: 40px;
+    font-family: "Arvo", serif;
+    font-weight: 700;
+}
+.navigation .butt:hover {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+.profile-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+    width: 60%;
+    margin: 50px auto;
+    transition: box-shadow 0.3s;
+}
+
+.profile-container:hover {
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 30px; */
+    border-bottom: 3px solid #d32f2f;
+    padding-bottom: 20px;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    margin-right: 30px;
+    border: 5px solid #d32f2f;
+    transition: transform 0.3s;
+}
+
+.profile-image img:hover {
+    transform: scale(1.1);
+}
+
+.profile-name h2 {
+    font-size: 36px;
+    color: #444;
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.profile-name p {
+    font-size: 18px;
+    color: #777;
+    font-family: "Poppins", sans-serif;
+}
+
+.edit-profile {
+    background-color: #d32f2f;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+    font-family: "Arvo", serif;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.edit-profile:hover {
+    background-color: #9f2323;
+    transform: translateY(-3px);
+}
+
+.donation-history {
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    transition: box-shadow 0.3s;
+}
+
+.donation-history:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.donation-history h3 {
+    margin-bottom: 20px;
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    color: #444;
+    font-size: 28px;
+}
+
+/* Enhanced Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+th {
+    background-color: #f5f5f5;
+    color: #333;
+    font-weight: 700;
+}
+
+td {
+    font-family: "Poppins", sans-serif;
+    color: #555;
+}
+
+tr:hover td {
+    background-color: #f1f1f1;
+}

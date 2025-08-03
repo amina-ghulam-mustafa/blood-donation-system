@@ -1,0 +1,33 @@
+CREATE TABLE RegistrationTeam (
+    RTeam_Id INT AUTO_INCREMENT PRIMARY KEY,
+    teamName VARCHAR(50)
+);
+
+CREATE TABLE Donor (
+    DonorId INT AUTO_INCREMENT PRIMARY KEY,
+    D_firstName VARCHAR(50),
+    D_lastName VARCHAR(50),
+    D_gender ENUM('Male', 'Female', 'Other'),
+    D_address VARCHAR(255),
+    D_quantity VARCHAR(255),
+    D_bloodGroup VARCHAR(5),
+    RTeam_id INT,
+    FOREIGN KEY (RTeam_id) REFERENCES RegistrationTeam(RTeam_Id)
+);
+CREATE TABLE recipient (
+    RecipientId INT AUTO_INCREMENT PRIMARY KEY,
+    R_firstName VARCHAR(50),
+    R_lastName VARCHAR(50),
+    R_gender ENUM('Male', 'Female', 'Other'),
+    R_address VARCHAR(255),
+    R_bloodGroup VARCHAR(5),
+    RTeam_id INT,
+    FOREIGN KEY (RTeam_id) REFERENCES RegistrationTeam(RTeam_Id)
+);
+
+CREATE TABLE DonorContact (
+    DonorId INT,
+    D_contact VARCHAR(15),
+    PRIMARY KEY (DonorId, D_contact),
+    FOREIGN KEY (DonorId) REFERENCES Donor(DonorId)
+);

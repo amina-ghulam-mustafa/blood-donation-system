@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Baskervville+SC&family=Cabin:ital,wght@0,400..700;1,400..700&family=Caveat:wght@400..700&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Crafty+Girls&family=Esteban&family=Great+Vibes&family=Merienda:wght@300..900&family=Odibee+Sans&family=Permanent+Marker&family=Playwrite+AR:wght@100..400&family=Playwrite+DK+Loopet:wght@100..400&family=Rokkitt:ital,wght@0,100..900;1,100..900&family=Zain:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
+<!-- <link href="admin2.css" rel="stylesheet"> -->
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+img:hover {
+
+    transform: scale(1.2);
+    transition: all 2s;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 70px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    user-select: none;
+    font-size: 35px;
+    color: rgb(148, 12, 12);
+    text-align: left;
+    margin-top: 22px;
+    margin-left: 10px;
+    text-shadow: 2px 2px 5px #928f8f;
+    font-family: "Arvo", serif;
+    font-weight: 700;
+}
+
+.logoim {
+    user-select: none;
+    width: 80px;
+    height: 80px;
+    color: white;
+}
+
+.box {
+    display: flex;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.2em;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    font-family: "Arvo", serif;
+    font-weight: 400;
+}
+
+.navigation .butt {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    margin-left: 40px;
+    font-family: "Arvo", serif;
+    font-weight: 700;
+}
+
+.navigation .butt:hover {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+.dashboard {
+    width: 100%;
+    margin-top: 130px;
+    padding: 20px;
+    background-image: url(made.jpg);
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dashboard h1 {
+    font-size: 34px;
+    text-shadow: 2px 2px 5px #928f8f;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 11%;
+    font-family: "Baskervville SC", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 21%;
+}
+
+.search-input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    width: 300px;
+    font-size: 15px;
+    margin-top: 20px;
+    background-color: #f5f5f5;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.search-button {
+    background-color: #9f0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 0px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-icon {
+    width: 17px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.card-container {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    color: black;
+    border-bottom: 2px solid black;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.card:last-child {
+    margin-bottom: 0;
+}
+
+.card h2 {
+    font-size: 1.4em;
+}
+
+.card-link {
+    float: right;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    font-family: "Playwrite AR", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+</style>
+<body>
+    <header>    
+        <div class="box">
+            <img class="logoim" src="iconnn.jpg" alt="logo">
+            <h2 class="logo">Donate Blood </h2>
+        </div>
+        <nav class="navigation">
+            <a href="HomePage1st.html">Home</a>
+            <a href="RecipientForm.html">Find Blood</a>
+            <a href="health.html">Register Now</a>
+            <a href="about.html">About Us</a>
+            <a href="feedback.html">Feedback</a> 
+            <a href="adminLogin.html"><button class="butt">Back</button></a>
+        </nav>
+    </header>
+    <main>
+        <div class="dashboard">
+          <div class="dashboard-header">
+            <h1>Dashboard</h1>
+            <div class="search-container">
+                <input type="text" placeholder="Search Donor" class="search-input">
+                <button type="submit" class="search-button">
+                    <a href="donorDetail.html"><img src="search.png" alt="Search" class="search-icon"></a>
+
+                </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <h2>Listed Blood Donations</h2>
+            <a href="bloodbankg.php" class="card-link">Details -></a>
+          </div>
+          <div class="card">
+            <h2>Requested Blood Groups</h2>
+            <a href="requestedbgAv.php" class="card-link">Details -></a>
+          </div>
+          <div class="card">
+            <h2>Blood Bank</h2>
+            <a href="displayAvailableBlood.php" class="card-link">Details -></a>
+
+          </div>
+        </div>
+      </main>
+    
+</body>
+</html>
